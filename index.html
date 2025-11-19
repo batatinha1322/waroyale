@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>War Royale — Protótipo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hud">
+    <div class="left-hud">
+      <div class="tower-info">
+        <div>Torres (Você): <span id="left-tower-hp">3000</span></div>
+      </div>
+    </div>
+
+    <div class="center-hud">
+      <div class="elixir-bar">
+        <div id="elixir-value">0</div>
+        <div class="elixir-fill" id="elixir-fill"></div>
+      </div>
+      <div class="info-small">Elixir</div>
+    </div>
+
+    <div class="right-hud">
+      <div class="tower-info">
+        <div>Torres (Inimigo): <span id="right-tower-hp">3000</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="game-area">
+    <canvas id="gameCanvas" width="1000" height="420"></canvas>
+
+    <div class="cards" id="cards"></div>
+  </main>
+
+  <footer class="footer">
+    Protótipo War Royale — Arena 1: Campos de Treinamento
+  </footer>
+
+  <script src="game.js"></script>
+</body>
+</html>
